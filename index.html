@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script defer src="app.js"></script>
+  <title>cruds</title>
+</head>
+<body>
+  <div class="crud">
+    <header>
+      <h2>cruds</h2>
+      <p>proudct management system</p>
+      <button id="headerB" style="width:20%; margin:6px 0;"onclick="showOutputs()">Show data</button>
+    </header>
+    <section class="inputs">
+      <input type="text" id="title" placeholder="Title"/>
+      <div class="price">
+         <input onkeyup="getTotal()" type="number" id="price" placeholder="Price"/>
+         <input onkeyup="getTotal()" type="number" id="taxes" placeholder="Taxes"/>
+         <input onkeyup="getTotal()" type="number" id="ads" placeholder="Ads"/>
+         <input onkeyup="getTotal()" type="number" id="discount" placeholder="Discount"/>
+         <small id="total">36777</small>
+      </div>
+      <input type="number" id="count" placeholder="Count"/>
+      <input type="text" id="catagory" placeholder="Catagory"/>
+      <button  class="btn-create">Create</button>
+    </section>
+    <section class="outputs">
+      <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search"/>
+      <div class="btn-s">
+          <button onclick="Search(this.id)" id="Search-t">Search By Title</button>
+          <button onclick="Search(this.id)" id="Search-c">Search By Catagory</button>
+      </div>
+      <div id="deleteAll"></div>
+      <table>
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>price</th>
+          <th>taxes</th>
+          <th>ads</th>
+          <th>discount</th>
+          <th>Total</th>
+          <th>catagory</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

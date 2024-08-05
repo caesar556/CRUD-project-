@@ -1,0 +1,158 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Sans-Serif;
+  background-color: #222;
+  color: #fff;
+}
+.crud{
+  width: 80%;
+  margin: auto;
+}
+header{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top:20px;
+  margin-bottom: 40px;
+  font-size: 1.2em;
+}
+.inputs{
+  background-color: #000;
+  padding: 15px;
+  border-radius: 20px;
+  transition: 0.8s ease;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 90%);
+}
+input{
+  font-weight:600;
+  font-size: 1.1em;
+  background-color: #111;
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  margin: 6px 0;
+  border-radius: 5px;
+  padding: 6px;
+  color: #feeccedd;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 90%);
+  transition: 0.5s ease;
+}
+input:focus{
+  border-radius: 7px;
+  border: solid #feddcc 1px;
+  background-color: #1d1d9c;
+}
+.price input{
+  width: 20%;
+}
+#total{
+  content:"Total:";
+  background-color: #f10d;
+  border-radius:6px;
+  padding: 7px;
+}
+#total::before{
+  content:"Total:" ;
+}
+.btn-create{
+  font-size: 1.4em;
+  font-weight: 700;
+  background-color: #1d1ccc;
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.btn-create:hover{
+  letter-spacing: 1px;
+  background-color: #1dfd9c;
+}
+.outputs{
+  margin: 18px 0;
+  background-color: #000;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 90%);
+  width: 100%;
+}
+.btn-s{
+  display: flex;
+  justify-content: space-between;
+}
+.outputs #search{
+  padding: 1rem 0.66rem;
+}
+.btn-s button{
+  width: 45%;
+  height: 30px;
+  background-color: #1d1ccc;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 0.66rem;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.btn-s button:hover{
+  letter-spacing: 1px;
+  background-color: #dccddd;
+}
+table{
+  width:100%;
+  text-align: center;
+  margin: 11px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+table th{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+table td button{
+  margin: 4px 0;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 4px 2px;
+  background-color: #1d1ccc;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+table td button:hover{
+  letter-spacing: 1px;
+  background-color: #1dfdcc;
+}
+#deleteAll{
+  margin: 10px 0;
+}
+button{
+  font-size: 1.4em;
+  font-weight: 700;
+  background-color: #1d1ccc;
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+button:hover{
+  letter-spacing: 1px;
+  background-color: #dccddd;
+}
